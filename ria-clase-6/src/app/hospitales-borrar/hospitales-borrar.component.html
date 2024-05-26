@@ -1,0 +1,10 @@
+<h1>Borrar Hospital</h1>
+<mat-card *ngIf="hospital">
+  <mat-card-content>
+    <p>¿Está seguro de que desea eliminar el hospital <strong>{{ hospital.nombre }}</strong>, ubicado en <strong>{{ hospital.direccion }}</strong>?</p>
+    <div style="text-align: right">
+      <button mat-raised-button color="warn" (click)="borrarHospital()">Eliminar</button>
+      <button mat-raised-button (click)="cancelar()">Cancelar</button>
+    </div>
+  </mat-card-content>
+</mat-card>
